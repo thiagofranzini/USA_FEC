@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Avaliação de Projetos</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="scripts/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap-filestyle.min.js"></script>
+    <script type="text/javascript" src="scripts/geral/geral.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/geral/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="css/cadastroProjetos/cadastroProjetos.css" />
+    <script type="text/javascript" src="scripts/cadastro/cadastro.js"></script>
+</head>
+
+<body>
+    <div class="topo">
+        <div class="margin-top-20"></div>
+        <img src="image/uniara_logoo.png">
+    </div>
+
+    <div id="cadastro">
+        <div id="msgErro"></div>
+
+        <h1>Cadastrar/Alterar Projetos</h1>
+
+        <div class="row text-center">
+            <label class="color-red">* </label>
+            <label>Campos obrigatórios</label>
+        </div>
+
+        <div id="inputCadastro">
+            <div class="row">
+                <div class="form-group col-md-8">
+                    <div class="form-group col-md-10">
+                        <input type="text" id="txtNome" class="form-control" title="Nome" maxlength="25" placeholder="Nome do Projeto" />
+                    </div>
+                    <div class="form-group col-md-2" style="margin-left:-7%;margin-top:3%;">
+                        <font color="red">*</font>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-8">
+                    <div class="form-group col-md-10">
+                        <input type="text" id="txtDescricao" class="form-control" title="Nome" maxlength="50" placeholder="Breve descrição" />
+                    </div>
+                    <div class="form-group col-md-2" style="margin-left:-7%;margin-top:3%;">
+                        <font color="red">*</font>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-8">
+                    <div class="form-group col-md-10">
+                        <input type="file" id="fileProjeto" class="filestyle" data_icon="true" data-buttontext="Selecionar arquivo" data-size="sm"
+                        />
+                    </div>
+                    <div class="form-group col-md-2" style="margin-left:-7%;margin-top:3%;">
+                        <font color="red">*</font>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <img src="image/og.jpg" id="imgProjetos" alt="imagem" class="img-thumbnail margin-left-30">
+                </div>
+            </div>
+
+            <div>
+                <input type="button" value="Salvar" id="btnSalvar" class="btn btn-success margin-left-15" />
+                <input type="button" value="Voltar" id="btnVoltar" class="btn btn-danger margin-left-15" />
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

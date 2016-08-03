@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Avaliação de Projetos</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="scripts/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/geral/geral.js"></script>
+    <script type="text/javascript" src="scripts/login/login.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/geral/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="css/login/login.css" />
+
+</head>
+
+<body>
+    <form>
+        <div class="topo">
+            <div class="margin-top-20"></div>
+            <img src="image/uniara_logoo.png">
+        </div>
+
+        <img src="image/imgAvaliacao2.png" id="imgAvaliacao">
+
+        <div id="login">
+            <div id="msgErro"></div>
+
+            <h1>Avaliação de Projetos</h1>
+
+            <div class="row text-center">
+                <label class="color-red">* </label>
+                <label>Campos obrigatórios</label>
+
+                <div id="inputLogin">
+
+                    <div class="row">
+                        <div class="form-group col-md-8">
+                            <div class="form-group col-md-10">
+                                <input type="text" id="txtNome" class="form-control" title="Nome" maxlength="20" placeholder="Nome" />
+                            </div>
+                            <div class="form-group col-md-2" style="margin-left:-9%;margin-top:3%;">
+                                <font color="red">*</font>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <div class="form-group col-md-5">
+                                <input type="text" id="txtIdade" class="form-control" title="Nome" maxlength="2" placeholder="Idade" />
+                            </div>
+                            <div class="form-group col-md-2" style="margin-left:-9%;margin-top:3%;">
+                                <font color="red">*</font>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="radio-inline margin-left-30 float-left">
+                            <input type="radio" name="sexo" id="masc" title="Sexo" value="M" />Masculino
+                        </label>
+
+                        <label class="radio-inline float-left">
+                            <input type="radio" name="sexo" id="fem" title="Sexo" value="F" />Feminino <font color="red">*</font>
+                        </label>
+                    </div>
+
+                    <div class="row display-none" id="divWhats">
+                        <div class="form-group col-md-8">
+                            <div class="form-group col-md-10">
+                                <input type="text" id="txtWhats" class="form-control" title="Nome" maxlength="15" placeholder="WhatsApp" />
+                            </div>
+                            <div class="form-group col-md-2" style="margin-left:-9%;margin-top:3%;">
+                                <font color="red">*</font>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quebrar-linha"></div>
+
+                    <div class="input-group">
+                        <input type="button" value="Entrar" id="btnEntrar" class="btn btn-primary margin-left-15" />
+                        <input type="button" value="Inserir Projeto" id="btnInserirProjeto" class="btn btn-success margin-left-10" />
+                    </div>
+                </div>
+            </div>
+    </form>
+</body>
+
+</html>
